@@ -64,7 +64,7 @@
             <objects>
                 <navigationController id="9nt-tO-zxJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UGC-sc-bKR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -107,8 +107,15 @@
                                 <action selector="close:" destination="Sk5-9H-69Z" id="14Z-R1-E4F"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jVu-PO-Pg1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jVu-PO-Pg1">
+                            <connections>
+                                <action selector="save:" destination="Sk5-9H-69Z" id="s1e-gO-V6J"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="memoTextView" destination="3Es-Bo-g61" id="TCu-St-9XK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9B-kd-e3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
