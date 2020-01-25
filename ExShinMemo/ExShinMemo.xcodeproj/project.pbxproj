@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E751AE9D23DC7A7600508FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751AE9C23DC7A7600508FF4 /* AppDelegate.swift */; };
 		E751AE9F23DC7A7600508FF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751AE9E23DC7A7600508FF4 /* SceneDelegate.swift */; };
-		E751AEA123DC7A7600508FF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751AEA023DC7A7600508FF4 /* ViewController.swift */; };
 		E751AEA423DC7A7600508FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E751AEA223DC7A7600508FF4 /* Main.storyboard */; };
 		E751AEA723DC7A7600508FF4 /* ExShinMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E751AEA523DC7A7600508FF4 /* ExShinMemo.xcdatamodeld */; };
 		E751AEA923DC7A7A00508FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E751AEA823DC7A7A00508FF4 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		E751AE9923DC7A7600508FF4 /* ExShinMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExShinMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E751AE9C23DC7A7600508FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E751AE9E23DC7A7600508FF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E751AEA023DC7A7600508FF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E751AEA323DC7A7600508FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E751AEA623DC7A7600508FF4 /* ExShinMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExShinMemo.xcdatamodel; sourceTree = "<group>"; };
 		E751AEA823DC7A7A00508FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				E751AE9C23DC7A7600508FF4 /* AppDelegate.swift */,
 				E751AE9E23DC7A7600508FF4 /* SceneDelegate.swift */,
-				E751AEA023DC7A7600508FF4 /* ViewController.swift */,
 				E751AEA223DC7A7600508FF4 /* Main.storyboard */,
 				E751AEA823DC7A7A00508FF4 /* Assets.xcassets */,
 				E751AEAA23DC7A7A00508FF4 /* LaunchScreen.storyboard */,
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E751AEA723DC7A7600508FF4 /* ExShinMemo.xcdatamodeld in Sources */,
-				E751AEA123DC7A7600508FF4 /* ViewController.swift in Sources */,
 				E751AE9D23DC7A7600508FF4 /* AppDelegate.swift in Sources */,
 				E751AE9F23DC7A7600508FF4 /* SceneDelegate.swift in Sources */,
 			);
