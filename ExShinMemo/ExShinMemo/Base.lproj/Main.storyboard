@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,7 +48,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="메모장" id="Yph-vG-JIQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rKh-Cj-2Nb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rKh-Cj-2Nb">
+                            <connections>
+                                <segue destination="irr-rh-HCP" kind="presentation" id="6B5-wx-gd7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9d-RF-XdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,6 +74,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyY-ZQ-yf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-345" y="139"/>
+        </scene>
+        <!--새 메모-->
+        <scene sceneID="Ldi-0v-zvg">
+            <objects>
+                <viewController id="Sk5-9H-69Z" customClass="ComposeViewController" customModule="메모장" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xk0-BK-QAY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Es-Bo-g61">
+                                <rect key="frame" x="0.0" y="20" width="414" height="822"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Es-Bo-g61" firstAttribute="trailing" secondItem="eL5-Rl-69U" secondAttribute="trailing" id="1Pb-td-AOf"/>
+                            <constraint firstItem="3Es-Bo-g61" firstAttribute="leading" secondItem="eL5-Rl-69U" secondAttribute="leading" id="NT0-dl-DjJ"/>
+                            <constraint firstAttribute="bottom" secondItem="3Es-Bo-g61" secondAttribute="bottom" id="UNl-rH-Sg4"/>
+                            <constraint firstItem="3Es-Bo-g61" firstAttribute="top" secondItem="Xk0-BK-QAY" secondAttribute="top" constant="20" symbolic="YES" id="rVk-5G-KQN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eL5-Rl-69U"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="새 메모" id="roB-H1-S94">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mRn-QC-RsR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jVu-PO-Pg1"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9B-kd-e3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="-295.3125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yS1-0E-ZbE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="irr-rh-HCP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8ll-D8-6YJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sk5-9H-69Z" kind="relationship" relationship="rootViewController" id="AGQ-1P-csM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l3b-w7-GuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032" y="-295"/>
         </scene>
     </scenes>
 </document>
