@@ -100,6 +100,11 @@ extension DetailViewController:UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "dateCell", for: indexPath)
             
             cell.textLabel?.text = formatter.string(for: memo?.insertDate)
+            if #available(iOS 11.0, *) {
+                cell.textLabel?.textColor = UIColor(named: "MyLabelColor")
+            } else {
+                cell.textLabel?.textColor = UIColor.lightGray
+            }
             
             return cell
         default:
